@@ -7,7 +7,7 @@ module.exports = () => {
   require('../api/routes/pontosTuristicosRoutes')(app);
 
   // SETANDO VARIÁVEIS DA APLICAÇÃO 
-  app.set('port', process.env.PORT || config.get('server.port'));
+  app.set('port', process.env.PORT || 80);
 
   // MIDDLEWARES
   app.use(bodyParser.json());
